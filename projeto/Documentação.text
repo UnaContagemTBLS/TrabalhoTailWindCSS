@@ -1,0 +1,29 @@
+Documentação Tailwindcss.
+Extensões utilizadas:
+Live Server
+Tailwind CSS IntelliSense
+
+Instalação: (https://tailwindcss.com/docs/installation)
+npm init -y => Criar o package.json
+Via npm vamos instalar o Tailwindcss em nosso projeto e criar um arquivo 'tailwind.config.js'
+npm install -D tailwindcss => Instalando 'tailwindcss'
+npx tailwindcss init => Criando arquivo 'tailwind.config.js'
+
+Configurando o arquivo de modelos:
+Crie uma pasta 'src' e dentro dessa pasta crie seu arquivo .html
+Dentro do arquivo 'tailwind.config.js' adicione o caminho para os modelos => content: ["./src/**/*.{html,js}"].
+
+Adicionando diretivas Tailwindcss:
+Crie seu arquivo CSS e cole as seguintes diretivas para funcionamento do projeto.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Iniciando a construção do Tailwindcss
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch // Este comando vai pegar tudo que está no arquivo de entrada css (Diretivas) vai criar um arquivo output e monitorar ele
+
+Importando Tailwindcss no arquivo .html
+<link href="./output.css" rel="stylesheet">
+
+Comando para recompilar o TailWind
+npx tailwindcss -o ./output.css --watch
