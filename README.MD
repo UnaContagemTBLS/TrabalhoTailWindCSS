@@ -1,4 +1,4 @@
-## ERROR404: Sistema de Jogos Java - Documentação Oficial
+## PALESTRANDO - Documentação Oficial
 
 **Introdução**
 
